@@ -60,7 +60,9 @@ void loop() { // declaração da função loop, tudo que estiver dentro de {} é
 <div align="center">
 <figcaption><strong>Vídeo demonstrando o LED piscando</strong></figcaption>
 <br>
-<video controls src="assets/video_arduino.mp4" title="LED piscando"></video>
+
+[Clique aqui para assistir ao vídeo do LED piscando](assets/video_arduino.mp4)
+
 <br>
 <em>Demonstração em vídeo do Arduino executando o código “Blink”, com o LED interno acendendo e apagando em intervalos regulares.</em>
 </div>
