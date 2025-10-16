@@ -37,9 +37,30 @@ void loop() { // declaração da função loop, tudo que estiver dentro de {} é
 
 ### Evidências
 
-#### Screenshot do código na Arduino IDE
+<div align="center">
+<figcaption><strong>Screenshot do código na Arduino IDE</strong></figcaption>
+<br>
+<img src="assets/codigo_arduino.png" width="100%">
+<br>
+<em>Captura de tela mostrando o código desenvolvido na Arduino IDE, responsável por fazer o LED interno piscar em intervalos de 1 segundo.</em>
+</div>
 
-#### Foto do Arduino conectado e LED interno aceso
+<br>
 
-#### Vídeo demonstrando o LED piscando
+<div align="center">
+<figcaption><strong>Foto do Arduino com LED aceso</strong></figcaption>
+<br>
+<img src="assets/arduino_conectado.jpg" width="100%">
+<br>
+<em>Fotografia do Arduino conectado ao computador, com o LED interno aceso, comprovando o funcionamento do circuito e a execução correta do código.</em>
+</div>
 
+<br>
+
+<div align="center">
+<figcaption><strong>Vídeo demonstrando o LED piscando</strong></figcaption>
+<br>
+<video controls src="assets/video_arduino.mp4" title="LED piscando"></video>
+<br>
+<em>Demonstração em vídeo do Arduino executando o código “Blink”, com o LED interno acendendo e apagando em intervalos regulares.</em>
+</div>
