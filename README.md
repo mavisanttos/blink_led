@@ -60,6 +60,7 @@ void loop() { // declaração da função loop, tudo que estiver dentro de {} é
 <div align="center">
 <figcaption><strong>Vídeo demonstrando o LED piscando</strong></figcaption>
 <br>
+<br>
 
 [Clique aqui para assistir ao vídeo do LED piscando](assets/video_arduino.mp4)
 
