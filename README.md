@@ -75,6 +75,112 @@ void loop() { // declaração da função loop, tudo que estiver dentro de {} é
 
 [Assista ao vídeo no Google Drive](https://drive.google.com/file/d/1QQKh9uTJVaOuTOY_MhBF_BXGAz6fiGJa/view?usp=sharing)
 
-
 <em>Demonstração em vídeo do Arduino executando o código “Blink”, com o LED interno acendendo e apagando em intervalos regulares.</em>
+</div>
+
+---
+
+# Parte 2 – Simulando Blink Externo (Arduino + Tinkercad)
+
+&emsp; Esta parte do projeto tem como objetivo simular um circuito de pisca-pisca (Blink) utilizando o Arduino UNO no ambiente de simulação Tinkercad.
+<br>
+&emsp; A montagem contém um LED externo (off-board) conectado a um protoboard, resistor e jumpers.
+<br>
+&emsp; Ao iniciar a simulação no Tinkercad, o LED deve acender e apagar de forma contínua, seguindo os intervalos definidos no código.
+
+## Funcionamento
+
+&emsp; O código desenvolvido envia sinais elétricos através do pino digital 13 do Arduino, que é a porta padrão usada no exemplo clássico do “Blink”.
+<br>
+&emsp; Esse pino é configurado como saída (OUTPUT), permitindo o controle direto do LED conectado externamente.
+
+### Etapas de funcionamento:
+
+1. Define-se o pino do LED (porta 13, padrão para o exemplo de Blink) como saída.
+
+2. O Arduino envia sinal HIGH (ligado) — o LED acende.
+
+3. Aguarda o tempo definido (1000 milissegundos).
+
+4. Envia sinal LOW (desligado) — o LED apaga.
+
+5. Aguarda novamente (1000 milissegundos).
+
+6. O processo se repete em loop infinito.
+
+## Código Utilizado
+
+```c
+void setup()
+{
+  pinMode(LED_BUILTIN, OUTPUT);
+}
+
+void loop()
+{
+  digitalWrite(LED_BUILTIN, HIGH);
+  delay(1000);
+  digitalWrite(LED_BUILTIN, LOW);
+  delay(1000);
+}
+```
+
+## Componentes Utilizados
+
+| **Componente**              | **Quantidade** | **Função**                                                                                       |
+| --------------------------- | -------------- | ------------------------------------------------------------------------------------------------ |
+| **Arduino UNO**             | 1              | Controlador principal do circuito                                                                |
+| **Protoboard**              | 1              | Base para montagem dos componentes                                                               |
+| **LED (off-board)**         | 1              | Indica visualmente o funcionamento do circuito                                                   |
+| **Resistor (1000Ω)** | 1              | Limita a corrente elétrica que passa pelo LED                                                    |
+| **Jumpers**                 | 2              | Fios de conexão: **vermelho** ligado ao pino 13 (saída padrão) e **preto** ligado ao GND (terra) |
+
+## Ligações do Circuito
+
+&emsp; O circuito foi montado utilizando o Arduino UNO e uma protoboard. O objetivo é fazer o LED externo piscar, controlado pela porta digital 13 do Arduino.
+
+- O fio vermelho conecta o pino digital 13 do Arduino à perna positiva (ânodo) do LED, por meio de um resistor que limita a corrente elétrica e evita a queima do componente.
+
+- O fio preto conecta o GND (terra) do Arduino à pena negativa (cátodo), fechando o circuito.
+
+- O LED está posicionado na protoboard, com o ânodo (perna maior) ligado ao resistor e o cátodo (perna menor) conectado ao GND.
+
+- O resistor está entre o pino 13 (via fio vermelho) e o LED, garantindo que a corrente seja adequada.
+
+## Simulação no Tinkercad
+
+Você pode acessar a simulação completa clicando no link abaixo:
+
+[Projeto no Tinkercad – Blink Externo](https://www.tinkercad.com/things/72PKZNP9Jjp-brilliant-stantia-uusam/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard&sharecode=0vpOIbYfVUXvAQsqPWNeLiUIDqDJZknN7xFXbFtlTxU)
+
+## Evidências
+
+<div align="center">
+<figcaption><strong>Montagem no Tinkercad</strong></figcaption>
+<br>
+<img src="assets/tinkercad.png" width="100%">
+<br>
+<em>Captura de tela mostrando o circuito montado com o Arduino, protoboard, resistor e LED.</em>
+</div>
+
+<br>
+
+<div align="center">
+<figcaption><strong>Código no Tinkercad</strong></figcaption>
+<br>
+<img src="assets/codigo_tinkercad.png" width="100%">
+<br>
+<em>Screenshot do código desenvolvido no ambiente de simulação.</em>
+</div>
+
+<br>
+
+<div align="center">
+<figcaption><strong>Simulação em funcionamento</strong></figcaption>
+<br>
+<br>
+
+[Assista ao vídeo no Google Drive]()
+
+<em>Demonstração em vídeo mostrando o LED piscando alternadamente.</em>
 </div>
