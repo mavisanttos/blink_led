@@ -1,12 +1,24 @@
-# Blink Led Interno
+# Blink Led
 
-## Parte 1 – Blink LED Interno (Arduino)
+## Sumário
+
+[Parte 1 – Blink LED Interno (Arduino)](#c1)
+
+[Parte 2 – Simulando Blink Externo (Arduino + Tinkercad)](#c2)
+
+[Conclusão](#c3)
+
+## <a name="c1"></a>Parte 1 – Blink LED Interno (Arduino)
 
 &emsp; Este projeto realiza o “blink” do LED interno do Arduino, fazendo com que ele acenda por 1 segundo (1000 milissegundos), apague por 1 segundo (1000 milissegundos) e repita esse ciclo continuamente — criando o efeito de uma luz piscando.
 
 ---
 
 ### Funcionamento
+
+&emsp; O Arduino UNO possui um LED interno conectado ao pino digital 13, que é a porta padrão usada para testes básicos de funcionamento. Esse LED é identificado na placa com a letra “L”.
+
+&emsp; No código, o comando LED_BUILTIN faz referência direta a esse pino, tornando o programa mais legível e portável para outras placas.
 
 O código faz o LED interno do Arduino:
 
@@ -22,7 +34,7 @@ O código faz o LED interno do Arduino:
 
 | **Componente**  | **Descrição**                                                                           |
 | --------------- | --------------------------------------------------------------------------------------- |
-| **Arduino UNO** | Placa principal utilizada para o controle do circuito e execução do código.             |
+| **Arduino UNO com LED interno** | Placa principal utilizada para o controle do circuito e execução do código com LED interno embutido na placa e conectado ao pino 13.             |
 | **Cabo USB**    | Responsável pela alimentação e comunicação entre o Arduino e o computador.              |
 | **LED**         | Componente emissor de luz utilizado para demonstrar o piscar.                           |
 | **Arduino IDE** | Ambiente de desenvolvimento usado para escrever, compilar e enviar o código ao Arduino. |
@@ -80,18 +92,18 @@ void loop() { // declaração da função loop, tudo que estiver dentro de {} é
 
 ---
 
-# Parte 2 – Simulando Blink Externo (Arduino + Tinkercad)
+# <a name="c2"></a>Parte 2 – Simulando Blink Externo (Arduino + Tinkercad)
 
 &emsp; Esta parte do projeto tem como objetivo simular um circuito de pisca-pisca (Blink) utilizando o Arduino UNO no ambiente de simulação Tinkercad.
-<br>
+
 &emsp; A montagem contém um LED externo (off-board) conectado a um protoboard, resistor e jumpers.
-<br>
+
 &emsp; Ao iniciar a simulação no Tinkercad, o LED deve acender e apagar de forma contínua, seguindo os intervalos definidos no código.
 
 ## Funcionamento
 
 &emsp; O código desenvolvido envia sinais elétricos através do pino digital 13 do Arduino, que é a porta padrão usada no exemplo clássico do “Blink”.
-<br>
+
 &emsp; Esse pino é configurado como saída (OUTPUT), permitindo o controle direto do LED conectado externamente.
 
 ### Etapas de funcionamento:
@@ -180,7 +192,17 @@ Você pode acessar a simulação completa clicando no link abaixo:
 <br>
 <br>
 
-[Assista ao vídeo no Google Drive]()
+[Assista ao vídeo no Google Drive](https://drive.google.com/file/d/1qTC9N869KLEtJ0aRQWSGsXw_fAnROv0s/view?usp=sharing)
 
 <em>Demonstração em vídeo mostrando o LED piscando alternadamente.</em>
 </div>
+
+---
+
+# <a name="c3"></a>Conclusão
+
+&emsp; O projeto Blink LED é uma introdução ao uso do Arduino, permitindo compreender o funcionamento de pinos digitais, saídas elétricas e estrutura básica de programação (funções setup() e loop()).
+
+&emsp; A Parte 1 mostrou o uso do LED interno, ideal para validar a instalação da IDE e a comunicação com a placa.
+
+&emsp; Já a Parte 2 mostra a relação ao conectar componentes externos no protoboard, consolidando noções de circuito, polaridade, e controle por software.
